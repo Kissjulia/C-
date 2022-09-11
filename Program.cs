@@ -1,15 +1,12 @@
-﻿Console.WriteLine("Введите число");
-int n = Convert.ToInt32(Console.ReadLine());
-int n1 = n / 10000;
-int n2 = n / 1000 % 10;
-int n4 = n / 10 % 10;
-int n5 = n % 10;
-Console.WriteLine($" n1 = {n1} n2 = {n2} n4 = {n4} n5 = {n5}");
-if (n1 == n5 && n2 == n4)
-{
-    Console.WriteLine("Yes");
-}
-else
-{
-    Console.WriteLine("No");
-}
+﻿Console.WriteLine("Введите координаты точки А");
+int x1 = Convert.ToInt32(Console.ReadLine());
+int y1 = Convert.ToInt32(Console.ReadLine());
+int z1 = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("Введите координаты точки B");
+int x2 = Convert.ToInt32(Console.ReadLine());
+int y2 = Convert.ToInt32(Console.ReadLine());
+int z2 = Convert.ToInt32(Console.ReadLine());
+
+double AB = Math.Sqrt (Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2) + Math.Pow(z2 - z1, 2));
+Console.WriteLine(AB);
